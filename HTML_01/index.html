@@ -1,7 +1,7 @@
 <!-- El DOCTYPE especifica qué versión de (x)html está usando la página-->
 <!DOCTYPE html>
-<!-- Elemento HTML raíz, el resto de elementos desciende de este elemento -->
-<html lang="en">
+<!-- Elemento HTML raíz, el resto de elementos desciende de este elemento, aquí especificamos el lenguaje principal de la página web, esto afectará en los resultados de los motores de búsqueda-->
+<html lang="es">
 <!-- Las únicas etiquetas anidadas dentro de html permitidas son head y body-->
 <!-- head provee información general acerca del documento (metadatos), incluye título y enlaces a scripts y hojas de estilos externas-->
 <head>
@@ -9,9 +9,28 @@
     <!-- Internet Engineering Task Force (IETF) (en español, Grupo de Trabajo de Ingeniería de Internet1​) su objetivo es la estandarización y la arquitectura de internet, por ello se recomienda el estandar utf-8 -->
     <!-- Esta etiqueta especifica la codificacion de este documento-->
     <meta charset="UTF-8">
+    <!-- Colocar el autor le dice a los navegadores información valiosa, esto ayuda a posicionar tu marca personal en los motores de búsqueda como google, yahoo, bing, etc.
+    Además es útil para informar a los visitantes sobre quien es el autor, en caso que requieran contactarlo -->
+    <meta name="author" content="Israel Ortiz Cortés">
+    <!-- La descripción ayuda a describir tu página ante los motores de búsqueda, lo cual ayuda a quien busca tu contenido a encontrarte
+    Además el title y description son los textos que se muestran de tu página cuando alguien hace una búsqueda en google.-->
+    <meta name="description" content="Esta página web está hecha para mostrar las etiquetas básicas de un documento HTML y descripción de su funcionalidad">
+    <!-- Las etiquetas Open Graph sirven para mostrar contenido e imágenes cuando la gente comparta tu página web en las redes sociales tales como facebook. -->
+    <meta property="og:image" content="shorturl.at/ioIJV">
+    <meta property="og:description" content="Esta página web está hecha para mostrar las etiquetas básicas de un documento HTML y descripción de su funcionalidad">
+    <meta property="og:title" content="Tus primeras etiquetas de HTML">
+    <!-- Twitter tiene sus propias etiquetas propietarias para mostrar con formato tu página cuando sea compartida-->
+    <meta name="twitter:title" content="Tus primeras etiquetas de HTML">
+    <!-- El favicon se usa para mostrar un pequeño ícono ilustrativo de tu sitio en la pestaña del navegador, puedes realizar favicons de tu logo a partir de herramientas online como https://www.favicon-generator.org/-->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- El viewport es la parte visible de tu página en el navegador, lo declaramos con una escala normal de 1:1-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- el metadato de compatibilidad le dice al navegador con qué navegadores es compatible
+    si quisieramos emular un navegador internet explorer más antiguo (no lo recomiendo porque no soportan muchas funcionalidades nuevas de html y css) declararíamos la etiqueta de la siguiente manera
+    <meta http-equiv="X-UA-Compatible" content="ie=EmulateIE7">-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mi primer landing page</title>
+    <!--El título se muestra en la pestaña del navegador y cuando alguien busca tu página web en un motor de búsqueda como google-->
+    <title>Tus primeras etiquetas de HTML</title>
 </head>
 <body>
     
