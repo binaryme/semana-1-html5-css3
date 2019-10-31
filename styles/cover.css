@@ -1,0 +1,41 @@
+.portada {
+  height: 100vh;
+  /*Generated with https://www.colorzilla.com/gradient-editor/*/
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#281035+0,622e6b+42,c76d9a+73,fc9c83+90,fec1a3+99 */
+  background: #281035; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #281035 0%,
+    #622e6b 42%,
+    #c76d9a 73%,
+    #fc9c83 90%,
+    #fec1a3 99%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #281035 0%,
+    #622e6b 42%,
+    #c76d9a 73%,
+    #fc9c83 90%,
+    #fec1a3 99%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #281035 0%,
+    #622e6b 42%,
+    #c76d9a 73%,
+    #fc9c83 90%,
+    #fec1a3 99%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#281035', endColorstr='#fec1a3',GradientType=0 ); /* IE6-9 */
+}
+div.container {
+  padding: 30px;
+}
+h1.title {
+  color: #ffffff;
+  font-family: futura;
+  font-size: 7rem;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
