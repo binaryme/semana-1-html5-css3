@@ -1,5 +1,6 @@
 .portada {
   height: 100vh;
+  overflow: hidden;
   /*Generated with https://www.colorzilla.com/gradient-editor/*/
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#281035+0,622e6b+42,c76d9a+73,fc9c83+90,fec1a3+99 */
   background: #281035; /* Old browsers */
@@ -38,4 +39,49 @@ h1.title {
   font-size: 7rem;
   line-height: 1;
   letter-spacing: 0.1em;
+}
+
+.sun {
+  width: 460px;
+  height: 460px;
+  bottom: -30%;
+  left: 33%;
+  position: relative;
+}
+.sun-glow {
+  width: 260px;
+  height: 260px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -70px;
+  background-color: #ffb058;
+  border-radius: 50%;
+}
+.sun-glow-1 {
+  background-color: rgba(255, 176, 88, 0.3);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-top: -280px;
+  margin-left: 78px;
+  z-index: 2;
+}
+.sun-glow-2 {
+  background-color: rgba(255, 176, 88, 0.2);
+  height: 380px;
+  width: 380px;
+  border-radius: 50%;
+  margin-top: -333px;
+  margin-left: 37px;
+  z-index: 1;
+}
+.sun-glow-3 {
+  background-color: rgba(255, 176, 88, 0.1);
+  height: 460px;
+  width: 460px;
+  border-radius: 50%;
+  margin-top: -416px;
+  margin-left: 0px;
+  z-index: -1;
 }
