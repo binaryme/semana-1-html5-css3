@@ -170,13 +170,13 @@ h1.title {
 
 .shooting-star-2 {
   left: 1000px;
-  top: 0px;
+  top: -270px;
   animation: shooting-star 13s infinite;
   -webkit-animation: shooting-star 13s infinite;
 }
 .shooting-star-3 {
   left: 100px;
-  top: 210px;
+  top: -265px;
   animation: shooting-star 15s infinite;
   -webkit-animation: shooting-star 15s infinite;
 }
