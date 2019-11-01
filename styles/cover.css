@@ -59,7 +59,7 @@ h1.title {
   background: #ff4d5a;
   margin: 22px 0px 0px 44px;
 }
-.subtitle {
+h2.subtitle {
   font-family: futura;
   color: #fff;
   font-size: 2.8rem;
@@ -163,19 +163,19 @@ h1.title {
   position: relative;
 }
 .shooting-star-1 {
-  left: 500px;
-  top: -180px;
+  left: 5%;
+  top: -97%;
   animation: shooting-star 8s infinite;
 }
 .shooting-star-2 {
-  left: 1000px;
-  top: -270px;
+  left: 50%;
+  top: -80%;
   animation: shooting-star 13s infinite;
   -webkit-animation: shooting-star 13s infinite;
 }
 .shooting-star-3 {
-  left: 100px;
-  top: -265px;
+  left: 90%;
+  top: -99%;
   animation: shooting-star 15s infinite;
   -webkit-animation: shooting-star 15s infinite;
 }
@@ -259,5 +259,36 @@ h1.title {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h1.title {
+    font-size: 3rem;
+  }
+  h2.subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1.title {
+    font-size: 2.8rem;
+  }
+  h2.subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1.title {
+    font-size: 2.4rem;
+  }
+  h2.subtitle {
+    font-size: 1.4rem;
+  }
+  .subrayo {
+    margin-top: 40px;
+    margin-bottom: 24px;
   }
 }
