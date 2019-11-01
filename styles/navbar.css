@@ -4,3 +4,21 @@
 .navbar a {
   color: #ffffff;
 }
+
+@media screen and (max-width: 992px) {
+  h1.title {
+    font-size: 3rem;
+  }
+  h2.subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ul.navbar-nav {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
