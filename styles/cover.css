@@ -74,6 +74,17 @@ h1.title {
   -webkit-animation: parpadeo 1s infinite;
   margin-top: -5px;
 }
+@keyframes parpadeo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*Estilos del sol*/
 .sun {
   width: 460px;
@@ -160,18 +171,6 @@ h1.title {
   }
   100% {
     transform: translate(0, 0) rotate(-30deg) scale(0.8);
-    opacity: 0;
-  }
-}
-
-@keyframes parpadeo {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
     opacity: 0;
   }
 }
