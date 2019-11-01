@@ -59,12 +59,19 @@ h1.title {
   background: #ff4d5a;
   margin: 22px 0px 0px 44px;
 }
+.subtitle {
+  font-family: futura;
+  color: #fff;
+  font-size: 2.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
 
 /*Estilos del sol*/
 .sun {
   width: 460px;
   height: 460px;
-  bottom: -30%;
+  bottom: 13%;
   float: right;
   position: relative;
 }
@@ -159,47 +166,48 @@ h1.title {
 }
 .star-1 {
   animation: star 5s infinite;
-  margin: 0 auto;
+  top: -485px;
+  left: 19px;
 }
 .star-2 {
   left: 1000px;
-  top: -139px;
+  top: -439px;
   animation: star 7s infinite;
   -webkit-animation: star 7s infinite;
 }
 .star-3 {
   left: 800px;
-  top: -315px;
+  top: -515px;
   animation: star 9s infinite;
   -webkit-animation: star 9s infinite;
 }
 .star-4 {
   left: 500px;
-  top: -215px;
+  top: -415px;
   animation: star 13s infinite;
   -webkit-animation: star 13s infinite;
 }
 .star-5 {
   left: 300px;
-  top: -255px;
+  top: -455px;
   animation: star 8s infinite;
   -webkit-animation: star 8s infinite;
 }
 .star-6 {
   left: 600px;
-  top: -285px;
+  top: -485px;
   animation: star 4s infinite;
   -webkit-animation: star 4s infinite;
 }
 .star-7 {
   left: 800px;
-  top: -205px;
+  top: -405px;
   animation: star 11s infinite;
   -webkit-animation: star 11s infinite;
 }
 .star-8 {
   left: 1150px;
-  top: -305px;
+  top: -405px;
   animation: star 10s infinite;
   -webkit-animation: star 10s infinite;
 }
