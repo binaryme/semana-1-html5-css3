@@ -130,3 +130,69 @@ h1.title {
     opacity: 0;
   }
 }
+
+/*estrellas*/
+.star {
+  width: 4px;
+  height: 4px;
+  background-color: #ffffff;
+  position: relative;
+}
+.star-1 {
+  animation: star 5s infinite;
+  margin: 0 auto;
+}
+.star-2 {
+  left: 1000px;
+  top: -139px;
+  animation: star 7s infinite;
+  -webkit-animation: star 7s infinite;
+}
+.star-3 {
+  left: 800px;
+  top: -315px;
+  animation: star 9s infinite;
+  -webkit-animation: star 9s infinite;
+}
+.star-4 {
+  left: 500px;
+  top: -215px;
+  animation: star 13s infinite;
+  -webkit-animation: star 13s infinite;
+}
+.star-5 {
+  left: 300px;
+  top: -255px;
+  animation: star 8s infinite;
+  -webkit-animation: star 8s infinite;
+}
+.star-6 {
+  left: 600px;
+  top: -285px;
+  animation: star 4s infinite;
+  -webkit-animation: star 4s infinite;
+}
+.star-7 {
+  left: 800px;
+  top: -205px;
+  animation: star 11s infinite;
+  -webkit-animation: star 11s infinite;
+}
+.star-8 {
+  left: 1150px;
+  top: -305px;
+  animation: star 10s infinite;
+  -webkit-animation: star 10s infinite;
+}
+
+@keyframes star {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
