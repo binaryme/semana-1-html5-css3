@@ -40,6 +40,25 @@ h1.title {
   line-height: 1;
   letter-spacing: 0.1em;
 }
+.subrayo {
+  margin-top: 60px;
+  margin-bottom: 44px;
+}
+.subrayo span:nth-child(1) {
+  display: block;
+  width: 100px;
+  height: 4px;
+  border-radius: 5px;
+  background: #ff4d5a;
+}
+.subrayo span:nth-child(2) {
+  display: block;
+  width: 100px;
+  height: 4px;
+  border-radius: 5px;
+  background: #ff4d5a;
+  margin: 22px 0px 0px 44px;
+}
 
 /*Estilos del sol*/
 .sun {
