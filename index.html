@@ -41,6 +41,7 @@
 
     <link rel="stylesheet" type="text/css" href="./styles/cover.css" />
     <link rel="stylesheet" type="text/css" href="./styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/contacto.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -124,9 +125,19 @@
       </div>
     </section>
     <section class="contacto">
-      <div class="container">
-        <div class="row">
-          <div class="col"><h3>Hablemos de código!</h3></div>
+      <div class="container ">
+        <div class="row d-flex align-items-center height100vh">
+          <div class="col ">
+            <h3>¡Hablemos de código! para eso estoy aquí</h3>
+            <img
+              src="img/hablemos.jpg"
+              alt="hablemos de código"
+              class="img-fluid"
+            />
+            <a href="https://www.freepik.es/fotos-vectores-gratis/negocios"
+              >Vector de Negocios creado por pikisuperstar - www.freepik.es</a
+            >
+          </div>
           <div class="col">
             <form>
               <div class="form-group">
@@ -134,16 +145,26 @@
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  name="email"
                   aria-describedby="emailHelp"
                   placeholder="Ingresa tu correo"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nombre completo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nombre"
+                  aria-describedby="Nombre"
+                  placeholder="Ingresa tu nombre completo"
                 />
               </div>
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Mensaje</label>
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  name="mensaje"
                   rows="3"
                 ></textarea>
               </div>
