@@ -91,7 +91,7 @@
         </ul>
       </div>
     </nav>
-    <section class="portada">
+    <section class="portada" role="portada">
       <div class="container d-flex align-items-center height100vh">
         <div class="flex-centered-elements">
           <h1 class="title">ISRAEL <br />ORTIZ</h1>
@@ -124,7 +124,7 @@
         <div class="sun-glow-3"></div>
       </div>
     </section>
-    <section class="contacto">
+    <section class="contacto" role="contacto">
       <div class="container ">
         <div class="row d-flex align-items-center height100vh">
           <div class="col">
@@ -139,14 +139,18 @@
             >
           </div>
           <div class="col">
-            <form onSubmit="event.preventDefault(); sendMail();" method="post">
+            <form
+              id="contact-form"
+              onSubmit="event.preventDefault(); sendMail();"
+              method="post"
+            >
               <div class="form-group">
                 <label for="exampleInputEmail1">Correo electrónico</label>
                 <input
                   type="email"
                   class="form-control"
                   id="email"
-                  aria-describedby="emailHelp"
+                  aria-describedby="contact-form"
                   placeholder="Ingresa tu correo"
                 />
               </div>
@@ -156,7 +160,7 @@
                   type="text"
                   class="form-control"
                   id="nombre"
-                  aria-describedby="Nombre"
+                  aria-describedby="contact-form"
                   placeholder="Ingresa tu nombre completo"
                 />
               </div>
