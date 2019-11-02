@@ -1,0 +1,23 @@
+{
+  "name": "semana-1-html5-css3",
+  "version": "1.0.0",
+  "description": "Primer semana del bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binaryme/semana-1-html5-css3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binaryme/semana-1-html5-css3/issues"
+  },
+  "homepage": "https://github.com/binaryme/semana-1-html5-css3#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0"
+  }
+}
