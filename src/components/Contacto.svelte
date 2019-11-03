@@ -8,13 +8,13 @@
     // https://sendgrid.com/docs/API_Reference/Web_API/mail.html
     // api_user = your_sendgrid_username & api_key=your_sendgrid_password & to=destination@example.com& toname=Destination & subject=Example_Subject & text=testingtextbody & from=info@domain.com
     // const data = { api_user: "your_sendgrid_username", api_key: "your_sendgrid_password", to: "mi@email.com", toname: "myname", subject: "mensaje desde tu portafolio", text=cuerpoemail, from=email}
-    //   axios
-    //     .post("https://api.sendgrid.com/api/mail.send.json", data)
-    //     .then((response) => {
-    //       const emailSended = response.data
-    //       console.log(`POST: response data`, emailSended)
-    //     })
-    //     .catch((error) => console.error(error))
+    axios
+      .post("https://api.sendgrid.com/api/mail.send.json", data)
+      .then(response => {
+        const emailSended = response.data;
+        console.log(`POST: response data`, emailSended);
+      })
+      .catch(error => console.error(error));
   };
 </script>
 
@@ -59,6 +59,17 @@
             Envíame un correo electrónico
           </button>
         </form>
+        <div
+          class="modal fade bd-example-modal-lg"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myLargeModalLabel"
+          id="correoEnviado"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">Correo enviado correctamente</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
