@@ -14,7 +14,7 @@
 </style>
 
 <nav class="navbar bg-transparent navbar-dark bg-inverse navbar-expand-md">
-  <a class="navbar-brand" href="#">CODEANDLEARN</a>
+  <a class="navbar-brand" href="/">CODEANDLEARN</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -29,22 +29,22 @@
     <ul class="mr-auto" />
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/">
           <i class="fa fa-linkedin" />
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/">
           <i class="fa fa-instagram" />
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/">
           <i class="fa fa-facebook" />
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/">
           <i class="fa fa-youtube" />
         </a>
       </li>
