@@ -1,2 +1,5 @@
 .env
 node_modules
+public/bundle.*
+.DS_Store
+.env
