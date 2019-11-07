@@ -30,22 +30,22 @@
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="/">
-          <i class="fa fa-linkedin" />
+          <i class="fab fa-linkedin-in" />
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/">
-          <i class="fa fa-instagram" />
+          <i class="fab fa-instagram" />
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/">
-          <i class="fa fa-facebook" />
+          <i class="fab fa-facebook" />
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/">
-          <i class="fa fa-youtube" />
+          <i class="fab fa-youtube" />
         </a>
       </li>
     </ul>
