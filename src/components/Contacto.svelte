@@ -1,4 +1,20 @@
 <script>
+  // dependencias
+  import {
+    Button,
+    Modal,
+    ModalBody,
+    ModalFooter,
+    ModalHeader
+  } from "sveltestrap";
+  import axios from "axios";
+
+  // estado del componente
+  let open = false;
+
+  //funciones
+  const toggle = () => (open = !open);
+
   export const sendMail = () => {
     const email = document.getElementById("email").value;
     const nombre = document.getElementById("nombre").value;
@@ -13,6 +29,8 @@
       .then(response => {
         const emailSended = response.data;
         console.log(`POST: response data`, emailSended);
+        // mostramos el modal con el mensaje de correo enviado correctamente
+        toggle();
       })
       .catch(error => console.error(error));
   };
@@ -59,17 +77,17 @@
             Envíame un correo electrónico
           </button>
         </form>
-        <div
-          class="modal fade bd-example-modal-lg"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="myLargeModalLabel"
-          id="correoEnviado"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">Correo enviado correctamente</div>
-          </div>
-        </div>
+        <Modal isOpen={open} {toggle}>
+          <ModalHeader {toggle}>Modal title</ModalHeader>
+          <ModalBody>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </ModalBody>
+          <ModalFooter>
+            <Button color="primary" on:click={toggle}>Do Something</Button>
+            <Button color="secondary" on:click={toggle}>Cancel</Button>
+          </ModalFooter>
+        </Modal>
       </div>
     </div>
   </div>
