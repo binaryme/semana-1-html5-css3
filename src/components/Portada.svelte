@@ -1,6 +1,5 @@
 <style>
   .portada {
-    height: 100vh;
     overflow: hidden;
     /*Generated with https://www.colorzilla.com/gradient-editor/*/
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#281035+0,622e6b+42,c76d9a+73,fc9c83+90,fec1a3+99 */
@@ -34,7 +33,7 @@
   h1.title {
     color: #ffffff;
     font-family: futura;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.2;
     letter-spacing: 0.1em;
   }
@@ -60,7 +59,7 @@
   h2.subtitle {
     font-family: futura;
     color: #fff;
-    font-size: 2.8rem;
+    font-size: 2rem;
     line-height: 1.2;
     letter-spacing: 0.1em;
   }
@@ -296,7 +295,7 @@
   }
 </style>
 
-<section class="portada">
+<section class="portada height100vh">
   <div class="container d-flex align-items-center height100vh">
     <div class="flex-centered-elements">
       <h1 class="title">

@@ -1,5 +1,6 @@
-.env
-node_modules
-public/bundle.*
 .DS_Store
-.env
+/node_modules/
+/src/node_modules/@sapper/
+yarn-error.log
+/cypress/screenshots/
+/__sapper__/

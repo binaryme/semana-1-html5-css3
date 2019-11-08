@@ -1,53 +1,60 @@
-<style>
-  .navbar {
-    margin-bottom: -56px;
-  }
-  .navbar a {
-    color: #ffffff;
-  }
+<script>
+	export let segment;
+</script>
 
-  @media screen and (max-width: 768px) {
-    ul.navbar-nav {
-      text-align: right;
-    }
-  }
+<style>
+	nav {
+		border-bottom: 1px solid rgba(255,62,0,0.1);
+		font-weight: 300;
+		padding: 0 1em;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* clearfix */
+	ul::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	li {
+		display: block;
+		float: left;
+	}
+
+	.selected {
+		position: relative;
+		display: inline-block;
+	}
+
+	.selected::after {
+		position: absolute;
+		content: '';
+		width: calc(100% - 1em);
+		height: 2px;
+		background-color: rgb(255,62,0);
+		display: block;
+		bottom: -1px;
+	}
+
+	a {
+		text-decoration: none;
+		padding: 1em 0.5em;
+		display: block;
+	}
 </style>
 
-<nav class="navbar bg-transparent navbar-dark bg-inverse navbar-expand-md">
-  <a class="navbar-brand" href="/">CODEANDLEARN</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarText"
-    aria-controls="navbarText"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" />
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="mr-auto" />
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="/">
-          <i class="fa fa-linkedin" />
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/">
-          <i class="fa fa-instagram" />
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/">
-          <i class="fa fa-facebook" />
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/">
-          <i class="fa fa-youtube" />
-        </a>
-      </li>
-    </ul>
-  </div>
+<nav>
+	<ul>
+		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
+		<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
+
+		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+		     the blog data when we hover over the link or tap it on a touchscreen -->
+		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
+	</ul>
 </nav>
