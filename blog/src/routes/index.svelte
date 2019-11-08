@@ -1,5 +1,6 @@
 <script>
   import Portada from "../components/Portada.svelte";
+  import Contacto from "../components/Contacto.svelte";
 </script>
 
 <svelte:head>
@@ -7,3 +8,4 @@
 </svelte:head>
 
 <Portada />
+<Contacto />

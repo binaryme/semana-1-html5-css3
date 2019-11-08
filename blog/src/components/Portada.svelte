@@ -1,8 +1,4 @@
 <style>
-  .portada,
-  .height100vh {
-    height: 100vh;
-  }
   .portada {
     overflow: hidden;
     /*Generated with https://www.colorzilla.com/gradient-editor/*/
@@ -299,7 +295,7 @@
   }
 </style>
 
-<section class="portada">
+<section class="portada height100vh">
   <div class="container d-flex align-items-center height100vh">
     <div class="flex-centered-elements">
       <h1 class="title">
