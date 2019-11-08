@@ -15,8 +15,10 @@
   }
 </style>
 
-<div class="col-lg-8">
-  <h2>Cómo conseguir tu primer trabajo como programador front-end</h2>
-  <h3>y 3 reglas para obtener un buen sueldo</h3>
-</div>
-<div class="col-lg-4">imagen ilustrativa</div>
+<article class="row mt-30">
+  <div class="col-lg-8">
+    <h2>Cómo conseguir tu primer trabajo como programador front-end</h2>
+    <h3>y 3 reglas para obtener un buen sueldo</h3>
+  </div>
+  <div class="col-lg-4">imagen ilustrativa</div>
+</article>
