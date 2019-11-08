@@ -21,6 +21,7 @@
     const mensaje = document.getElementById("mensaje").value;
     const cuerpoemail = `${nombre} con correo ${email} envió un mensaje desde tu página web, ${mensaje}`;
     console.log(email, nombre, mensaje);
+    console.log(process.env.SAPPER_APP_SENDGRID_API_KEY);
     toggle();
     // https://sendgrid.com/docs/API_Reference/Web_API/mail.html
     // api_user = your_sendgrid_username & api_key=your_sendgrid_password & to=destination@example.com& toname=Destination & subject=Example_Subject & text=testingtextbody & from=info@domain.com
