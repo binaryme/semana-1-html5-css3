@@ -1,5 +1,6 @@
 <script>
   import Entrada from "./Entrada.svelte";
+  import Subscribeform from "./SubscribeForm.svelte";
 </script>
 
 <section class="entrada">
@@ -13,7 +14,9 @@
         <Entrada />
       </section>
       <!-- aside de 4 columnas -->
-      <aside class="col-lg-3">Mensaje del aside</aside>
+      <aside class="col-lg-3">
+        <Subscribeform />
+      </aside>
     </div>
     <hr class="mt-60" />
   </div>
