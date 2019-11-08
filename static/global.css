@@ -1,6 +1,12 @@
 .height100vh {
   height: 100vh;
 }
+.color-white-a a {
+  color: #ffffff !important;
+}
+a {
+  color: #ff4d5a !important;
+}
 
 .mt-15 {
   margin-top: 15px;
@@ -13,4 +19,7 @@
 }
 .mb-60 {
   margin-bottom: 60px;
+}
+.mb--56 {
+  margin-bottom: -56px;
 }

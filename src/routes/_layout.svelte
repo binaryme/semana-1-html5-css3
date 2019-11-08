@@ -1,9 +1,9 @@
 <script>
   import Navbar from "../components/Navbar.svelte";
-  // export let segment;
+  export let segment;
 </script>
 
-<Navbar />
 <main>
+  <Navbar {segment} />
   <slot />
 </main>

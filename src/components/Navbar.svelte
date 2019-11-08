@@ -1,11 +1,8 @@
-<style>
-  .navbar {
-    margin-bottom: -56px;
-  }
-  .navbar a {
-    color: #ffffff;
-  }
+<script>
+  export let segment;
+</script>
 
+<style>
   @media screen and (max-width: 768px) {
     ul.navbar-nav {
       text-align: right;
@@ -13,7 +10,9 @@
   }
 </style>
 
-<nav class="navbar bg-transparent navbar-dark bg-inverse navbar-expand-md">
+<nav
+  class="navbar {segment === undefined ? 'bg-transparent mb--56 color-white-a navbar-dark bg-inverse' : ''}
+  navbar-expand-md">
   <a class="navbar-brand" href="/">CODEANDLEARN</a>
   <button
     class="navbar-toggler"

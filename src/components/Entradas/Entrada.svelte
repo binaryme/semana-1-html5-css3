@@ -44,7 +44,7 @@
     position: absolute;
     width: 100%;
     height: 90%;
-    color: transparent;
+    color: transparent !important;
     z-index: 50;
     top: 0;
   }
