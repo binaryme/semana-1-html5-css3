@@ -1,6 +1,9 @@
 .height100vh {
   height: 100vh;
 }
+.max-width-680 {
+  max-width: 680px !important;
+}
 .color-white-a a {
   color: #ffffff !important;
 }
@@ -16,6 +19,9 @@ a {
 }
 .mt-60 {
   margin-top: 60px;
+}
+.mt-44 {
+  margin-top: 44px;
 }
 .mb-60 {
   margin-bottom: 60px;

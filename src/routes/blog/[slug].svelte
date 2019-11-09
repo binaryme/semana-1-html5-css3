@@ -26,31 +26,35 @@
 		so we have to use the :global(...) modifier to target
 		all elements inside .content
 	*/
-
-  .content :global(h2) {
-    font-size: 1.4em;
-    font-weight: 500;
+  h1 {
+    font-weight: 600;
+    font-family: medium-content-sans-serif-font, "Lucida Grande",
+      "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-size: 40px;
+    line-height: 44px;
   }
-
-  .content :global(pre) {
-    background-color: #f9f9f9;
-    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
-    padding: 0.5em;
-    border-radius: 2px;
-    overflow-x: auto;
+  h3 {
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.54);
+    margin-top: 10px;
   }
-
-  .content :global(pre) :global(code) {
-    background-color: transparent;
-    padding: 0;
+  a.author {
+    color: #292929;
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    z-index: 100;
   }
-
-  .content :global(ul) {
-    line-height: 1.5;
+  a:hover {
+    text-decoration: none;
   }
-
-  .content :global(li) {
-    margin: 0 0 0.5em 0;
+  p {
+    font-size: 14px;
+    color: #757575;
   }
 </style>
 
@@ -58,8 +62,31 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
-
 <div class="content">
-  {@html post.html}
+  <div class="container max-width-680">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="mt-44">{post.title}</h1>
+        <h3>y 3 reglas para obtener un buen sueldo</h3>
+        <a
+          href="https://educatum.co"
+          rel="author"
+          class="author"
+          target="_blank">
+          Israel Ortiz Cortés
+        </a>
+        <p>
+          <time datetime="2008-02-14 20:00">8 noviembre 2019</time>
+        </p>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/blog-81f38.appspot.com/o/two-women-looking-at-the-code-at-laptop.jpg?alt=media&token=3e516928-b44e-4ba8-b518-8e081df2bb3b"
+          alt="imagen-ilustrativa"
+          class="img-fluid" />
+        <article class="mt-44">
+          {@html post.html}
+        </article>
+
+      </div>
+    </div>
+  </div>
 </div>
