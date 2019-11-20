@@ -1,5 +1,6 @@
 <script>
   export let title;
+  export let subtitle;
   export let html;
   export let slug;
 </script>
@@ -56,7 +57,7 @@
 <article class="row mt-30">
   <div class="col-lg-8">
     <h2>{title}</h2>
-    <h3>y 3 reglas para obtener un buen sueldo</h3>
+    <h3>{subtitle}</h3>
     <a href="https://educatum.co" rel="author" class="author" target="_blank">
       Israel Ortiz Cortés
     </a>
